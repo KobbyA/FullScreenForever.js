@@ -9,8 +9,6 @@
 $.fn.FullScreenForever = function(opts){
 
     var $window = $(window);
-//    var wWidth = $window.width();
-//    var wHeight = $window.height();
     var $el = this;
     var $parent = $el.parent();
     var pwidth = $parent.width();
@@ -34,8 +32,6 @@ $.fn.FullScreenForever = function(opts){
     }
 
     $(window).bind('resize', function(){
-//        wWidth = $window.width();
-//        wHeight = $window.height();
         pwidth = $parent.width();
         pHeight = $parent.height();
         callback(defaults.onResizeBefore, this);
