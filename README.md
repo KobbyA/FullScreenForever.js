@@ -5,10 +5,11 @@ A small utility jQuery plugin that makes an element, usually an image, stay full
 
 Options are pretty simple here are the defaults
 
+```javascript
 var defaults = {
     useCSS : false,// handle scaling by css transform or use width, height, top, left, and absolute position
     useOverflow: false,// make the parent element overflow hidden or not. If false the full screen element can bleed beyond the edges of its parent causing scrollbars possibly
     onResizeBefore : null, //callback function to be called before resizing in the context of the element being resized
     onResizeAfter :null //callback function to be called after resizing in the context of the element being resized
 };
-
+```
