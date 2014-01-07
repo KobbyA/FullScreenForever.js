@@ -70,7 +70,7 @@ $.fn.FullScreenForever = function(opts){
     function scaleByWidthHeight(ratio) {
         var _h = $el.height() * ratio, _w = $el.width() * ratio;
         var left = (pwidth - _w) / 2, top = (pHeight - _h) / 2;
-        $el.css({width: _w + 'px', height: _h + "px", top: top + 'px', left: left + 'px'});
+        $el.css({position:'absolute', width: _w + 'px', height: _h + "px", top: top + 'px', left: left + 'px'});
     }
 };
 
