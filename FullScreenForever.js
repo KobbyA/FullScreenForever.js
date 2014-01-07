@@ -27,6 +27,7 @@ $.fn.FullScreenForever = function(opts){
     if(!$.FullScreenForeverInit){
         $.FullScreenForeverInit = true;
         $window.on('resize', function(){
+            scaleImage();
             $window.trigger('fullScreenForever');
         });
     }
